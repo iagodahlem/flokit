@@ -8,6 +8,5 @@ cache:
     - ~/.cache
     - node_modules
 
-scripts:
+script:
   - yarn build
-  - yarn test
