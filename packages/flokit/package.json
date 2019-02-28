@@ -1,6 +1,6 @@
 {
   "name": "flokit",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Toolkit for easily and smoothly building UIs with React.",
   "author": "Iago Dahlem Lorensini <iagodahlemlorensini@gmail.com>",
   "homepage": "https://github.com/iagodahlem/flokit",
@@ -17,7 +17,7 @@
     "test:watch": "nwb test-react --server"
   },
   "dependencies": {
-    "flokit-theme-default": "^0.0.0"
+    "flokit-theme-default": "^0.0.1"
   },
   "peerDependencies": {
     "prop-types": "15.x",
