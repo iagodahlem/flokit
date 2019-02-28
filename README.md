@@ -13,8 +13,8 @@
 <br>
 
 <p align="center">
-  <a href="https://travis-ci.org/iagodahlem/flokit"><img src="https://img.shields.io/travis/iagodahlem/flokit/master.png?style=flat-square" /></a>
-  <a href="https://www.npmjs.org/package/flokit"><img src="https://img.shields.io/npm/v/npm-package.png?style=flat-square" /></a>
+  <a href="https://travis-ci.org/iagodahlem/flokit"><img src="https://img.shields.io/travis/iagodahlem/flokit/master.svg?style=flat-square" /></a>
+  <a href="https://npmjs.org/package/flokit"><img src="https://img.shields.io/npm/v/flokit.svg?style=flat-square" /></a>
 </p>
 
 ## Install
