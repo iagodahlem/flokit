@@ -1,7 +1,7 @@
 <br>
 
 <p align="center">
-  <img src="https://github.com/iagodahlem/flokit/blob/master/logo/logo.png" alt="flokit" height="320" />
+  <img src="https://raw.githubusercontent.com/iagodahlem/flokit/master/logo/logo.png" alt="flokit" height="320" />
 </p>
 
 <br>
