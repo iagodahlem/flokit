@@ -9,6 +9,9 @@
     "clean": "lerna run clean --stream",
     "test": "lerna run test --stream"
   },
+  "dependencies": {
+    "styled-system": "^4.2.2"
+  },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
