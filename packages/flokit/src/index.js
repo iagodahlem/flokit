@@ -128,6 +128,7 @@ Text.propTypes = {
 
 Text.defaultProps = {
   as: 'p',
+  m: 0,
 }
 
 export const Heading = styled(Text)
