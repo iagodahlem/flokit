@@ -131,7 +131,7 @@ Text.defaultProps = {
   m: 0,
 }
 
-export const Heading = styled(Text)
+export const Heading = styled(Text)``
 
 Heading.defaultProps = {
   as: 'h2',
