@@ -25,12 +25,12 @@ const Flex = styled(Box)`
 `
 
 Flex.propTypes = {
-  ...propTypes.flexbox.alignItems,
-  ...propTypes.flexbox.alignContent,
-  ...propTypes.flexbox.justifyItems,
-  ...propTypes.flexbox.justifyContent,
-  ...propTypes.flexbox.flexWrap,
-  ...propTypes.flexbox.flexDirection,
+  alignItems: propTypes.flexbox.alignItems,
+  alignContent: propTypes.flexbox.alignContent,
+  justifyItems: propTypes.flexbox.justifyItems,
+  justifyContent: propTypes.flexbox.justifyContent,
+  flexWrap: propTypes.flexbox.flexWrap,
+  flexDirection: propTypes.flexbox.flexDirection,
 }
 
 export default Flex

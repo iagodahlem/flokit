@@ -6,7 +6,6 @@ import {
   background,
   border,
   shadow,
-  typography,
   color,
   flex,
   flexGrow,
@@ -30,7 +29,6 @@ const Box = styled.div`
     background,
     border,
     shadow,
-    typography,
     color,
     flex,
     flexGrow,
@@ -49,18 +47,14 @@ Box.propTypes = {
   ...propTypes.background,
   ...propTypes.border,
   ...propTypes.shadow,
-
-  ...propTypes.typography,
-
   ...propTypes.color,
-
-  ...propTypes.flexbox.flex,
-  ...propTypes.flexbox.flexGrow,
-  ...propTypes.flexbox.flexShrink,
-  ...propTypes.flexbox.flexBasis,
-  ...propTypes.flexbox.justifySelf,
-  ...propTypes.flexbox.alignSelf,
-  ...propTypes.flexbox.order,
+  flex: propTypes.flexbox.flex,
+  flexGrow: propTypes.flexbox.flexGrow,
+  flexShrink: propTypes.flexbox.flexShrink,
+  flexBasis: propTypes.flexbox.flexBasis,
+  justifySelf: propTypes.flexbox.justifySelf,
+  alignSelf: propTypes.flexbox.alignSelf,
+  order: propTypes.flexbox.order,
 }
 
 export default Box

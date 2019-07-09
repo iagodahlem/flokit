@@ -185,9 +185,6 @@ import { Box } from 'flokit'
 | `pl`\|`paddingLeft`     | `padding-left`                     | `string`\|`number`\|`array` | `space` |
 | `px`\|`paddingX`        | `padding-left` & `padding-right`   | `string`\|`number`\|`array` | `space` |
 | `py`\|`paddingY`        | `padding-top` & `padding-bottom`   | `string`\|`number`\|`array` | `space` |
-| `color`                 | `color`                            | `string`\|`array`           | `colors` |
-| `bg`\|`backgroundColor` | `background-color`                 | `string`\|`array`           | `colors` |
-| `opacity`               | `opacity`                          | `string`\|`array`           | none |
 | `background`            | `background`                       | `string`\|`array`           | none |
 | `backgroundImage`       | `background-image`                 | `string`\|`array`           | none |
 | `backgroundSize`        | `background-size`                  | `string`\|`array`           | none |
@@ -206,6 +203,9 @@ import { Box } from 'flokit'
 | `borderY`               | `border-top` & `border-bottom`     | `string`\|`array`           | `borders` |
 | `textShadow`            | `text-shadow`                      | `string`\|`array`           | `shadows` |
 | `boxShadow`             | `box-shadow`                       | `string`\|`array`           | `shadows` |
+| `color`                 | `color`                            | `string`\|`array`           | `colors` |
+| `bg`\|`backgroundColor` | `background-color`                 | `string`\|`array`           | `colors` |
+| `opacity`               | `opacity`                          | `string`\|`array`           | none |
 | `flex`                  | `flex`                             | `string`\|`array`           | none |
 | `flex-grow`             | `flex-grow`                        | `string`\|`array`           | none |
 | `flex-shrink`           | `flex-shrink`                      | `string`\|`array`           | none |
