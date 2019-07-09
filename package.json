@@ -1,16 +1,13 @@
 {
   "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
+  "workspaces": {
+    "packages": ["packages/*"]
+  },
   "scripts": {
     "start": "lerna run start --stream",
     "build": "lerna run build --stream",
     "clean": "lerna run clean --stream",
     "test": "lerna run test --stream"
-  },
-  "dependencies": {
-    "styled-system": "^4.2.2"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
@@ -23,10 +20,6 @@
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.13.0",
     "lerna": "^3.13.4",
-    "nwb": "^0.23.0",
-    "prop-types": "^15.6.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "styled-components": "^4.2.0"
+    "nwb": "^0.23.0"
   }
 }

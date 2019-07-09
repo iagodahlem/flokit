@@ -4,23 +4,33 @@ import { Box, Flex } from '../../src'
 import './index.css'
 
 const Demo = () => (
-  <Box width={1} height={1}>
+  <Box width={1} height='100%'>
     <Flex
       height='100%'
       justifyContent='center'
       alignItems='center'
-      style={{ backgroundColor: '#fafafa' }}
+      bg='#fafafa'
     >
       <h1>Flokit Playground</h1>
     </Flex>
 
-    <Box
+    <Flex
       m='0 auto'
       p='1.8rem'
-      style={{ maxWidth: '780px', padding: '1.8rem' }}
+      maxWidth='780px'
     >
+      <Flex bg='red' alignItems='center' justifyContent='center' width={0.33}>
+        1
+      </Flex>
 
-    </Box>
+      <Flex bg='blue' alignItems='center' justifyContent='center' width={0.33}>
+        2
+      </Flex>
+
+      <Flex bg='green' alignItems='center' justifyContent='center' width={0.33}>
+        3
+      </Flex>
+    </Flex>
   </Box>
 )
 

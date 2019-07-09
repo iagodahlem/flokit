@@ -83,7 +83,7 @@ Strings values are parsed to raw CSS values, you can use it to set non numerical
 
 You can use numbers as props in several ways to define property values.
 
-* For scale props as `const spaces = [0, 4, 8, 16, 32]` for defining `margin` and `padding`, you can use numbers from 0 to the length of the scale. Numbers greater than the length of the scale are transformed into pixel raw values. Negative numbers are transformed into negative pixel raw values.
+* For scale props as `const spaces = [0, 4, 8, 16, 32]` for defining `margin` and `padding`, you can use numbers from 0 to the length of the scale.
 
 ```js
 // sets margin value of `theme.space[1]`
@@ -153,39 +153,66 @@ import { Box } from 'flokit'
 
 #### Props
 
-| Prop | CSS Property | Type |
-| :--- | :--- | :--- |
-| `position` | `position` | `string`\|`array` |
-| `zIndex` | `z-index` | `string`\|`array` |
-| `top` | `top` | `string`\|`array` |
-| `right` | `right` | `string`\|`array` |
-| `bottom` | `bottom` | `string`\|`array` |
-| `left` | `left` | `string`\|`array` |
-| `display` | `display` | `string`\|`array` |
-| `width` | `width` | `string`\|`number`\|`array` |
-| `height` | `height` | `string`\|`number`\|`array` |
-| `size` | `width` and `height` | `string`\|`number`\|`array` |
-| `m` | `margin` | `string`\|`number`\|`array` |
-| `mt` | `margin-top` | `string`\|`number`\|`array` |
-| `mr` | `margin-right` | `string`\|`number`\|`array` |
-| `mb` | `margin-bottom` | `string`\|`number`\|`array` |
-| `ml` | `margin-left` | `string`\|`number`\|`array` |
-| `mx` | `margin-left` and `margin-right` |`string`\| `number`\|`array` |
-| `my` | `margin-top` and `margin-bottom` |`string`\| `number`\|`array` |
-| `p`  | `padding` | `string`\|`number`\|`array` |
-| `pt` | `padding-top` | `string`\|`number`\|`array` |
-| `pr` | `padding-right` | `string`\|`number`\|`array` |
-| `pb` | `padding-bottom` | `string`\|`number`\|`array` |
-| `pl` | `padding-left` | `string`\|`number`\|`array` |
-| `px` | `padding-left` and `padding-right` |`string`\| `number`\|`array` |
-| `py` | `padding-top` and `padding-bottom` |`string`\| `number`\|`array` |
-| `fontSize` | `font-size` | `string`\|`number`\|`array` |
-| `color` | `color` | `string`\|`array` |
-| `bg`\|`backgroundColor` | `background-color` | `string`\|`array` |
-| `flex` | `flex` | `string`\|`array` |
-| `justifySelf` | `justify-self` | `string`\|`array` |
-| `alignSelf` | `align-self` | `string`\|`array` |
-| `order` | `order` | `string`\|`array` |
+| Prop | CSS Property | Type | Theme |
+| :--- | :--- | :--- | :--- |
+| `position`              | `position`                         | `string`\|`array`           | none |
+| `zIndex`                | `z-index`                          | `string`\|`array`           | `zIndices` |
+| `top`                   | `top`                              | `string`\|`array`           | none |
+| `right`                 | `right`                            | `string`\|`array`           | none |
+| `bottom`                | `bottom`                           | `string`\|`array`           | none |
+| `left`                  | `left`                             | `string`\|`array`           | none |
+| `display`               | `display`                          | `string`\|`array`           | none |
+| `width`                 | `width`                            | `string`\|`number`\|`array` | `sizes` |
+| `height`                | `height`                           | `string`\|`number`\|`array` | `sizes` |
+| `minWidth`              | `min-width`                        | `string`\|`number`\|`array` | `sizes` |
+| `maxWidth`              | `max-width`                        | `string`\|`number`\|`array` | `sizes` |
+| `minHeight`             | `min-height`                       | `string`\|`number`\|`array` | `sizes` |
+| `maxHeight`             | `max-height`                       | `string`\|`number`\|`array` | `sizes` |
+| `size`                  | `width` & `height`                 | `string`\|`number`\|`array` | `sizes` |
+| `verticalAlign`         | `vertical-align`                   | `string`\|`array`           | none |
+| `overflow`              | `overflow`                         | `string`\|`array`           | none |
+| `m`\|`margin`           | `margin`                           | `string`\|`number`\|`array` | `space` |
+| `mt`\|`marginTop`       | `margin-top`                       | `string`\|`number`\|`array` | `space` |
+| `mr`\|`marginRight`     | `margin-right`                     | `string`\|`number`\|`array` | `space` |
+| `mb`\|`marginBottom`    | `margin-bottom`                    | `string`\|`number`\|`array` | `space` |
+| `ml`\|`marginLeft`      | `margin-left`                      | `string`\|`number`\|`array` | `space` |
+| `mx`\|`marginX`         | `margin-left` & `margin-right`     | `string`\|`number`\|`array` | `space` |
+| `my`\|`marginY`         | `margin-top` & `margin-bottom`     | `string`\|`number`\|`array` | `space` |
+| `p`\|`padding`          | `padding`                          | `string`\|`number`\|`array` | `space` |
+| `pt`\|`paddingTop`      | `padding-top`                      | `string`\|`number`\|`array` | `space` |
+| `pr`\|`paddingRight`    | `padding-right`                    | `string`\|`number`\|`array` | `space` |
+| `pb`\|`paddingBottom`   | `padding-bottom`                   | `string`\|`number`\|`array` | `space` |
+| `pl`\|`paddingLeft`     | `padding-left`                     | `string`\|`number`\|`array` | `space` |
+| `px`\|`paddingX`        | `padding-left` & `padding-right`   | `string`\|`number`\|`array` | `space` |
+| `py`\|`paddingY`        | `padding-top` & `padding-bottom`   | `string`\|`number`\|`array` | `space` |
+| `color`                 | `color`                            | `string`\|`array`           | `colors` |
+| `bg`\|`backgroundColor` | `background-color`                 | `string`\|`array`           | `colors` |
+| `opacity`               | `opacity`                          | `string`\|`array`           | none |
+| `background`            | `background`                       | `string`\|`array`           | none |
+| `backgroundImage`       | `background-image`                 | `string`\|`array`           | none |
+| `backgroundSize`        | `background-size`                  | `string`\|`array`           | none |
+| `backgroundPosition`    | `background-position`              | `string`\|`array`           | none |
+| `backgroundRepeat`      | `background-repeat`                | `string`\|`array`           | none |
+| `border`                | `border`                           | `string`\|`array`           | `borders` |
+| `borderWidth`           | `border-width`                     | `string`\|`array`           | `borderWidths` |
+| `borderStyle`           | `border-style`                     | `string`\|`array`           | `borderStyles` |
+| `borderColor`           | `border-color`                     | `string`\|`array`           | `colors`  |
+| `borderRadius`          | `border-radius`                    | `string`\|`number`\|`array` | `radii` |
+| `borderTop`             | `border-top`                       | `string`\|`array`           | `borders` |
+| `borderRight`           | `border-right`                     | `string`\|`array`           | `borders` |
+| `borderBottom`          | `border-bottom`                    | `string`\|`array`           | `borders` |
+| `borderLeft`            | `border-left`                      | `string`\|`array`           | `borders` |
+| `borderX`               | `border-left` & `border-right`     | `string`\|`array`           | `borders` |
+| `borderY`               | `border-top` & `border-bottom`     | `string`\|`array`           | `borders` |
+| `textShadow`            | `text-shadow`                      | `string`\|`array`           | `shadows` |
+| `boxShadow`             | `box-shadow`                       | `string`\|`array`           | `shadows` |
+| `flex`                  | `flex`                             | `string`\|`array`           | none |
+| `flex-grow`             | `flex-grow`                        | `string`\|`array`           | none |
+| `flex-shrink`           | `flex-shrink`                      | `string`\|`array`           | none |
+| `flex-basis`            | `flex-basis`                       | `string`\|`array`           | none |
+| `justifySelf`           | `justify-self`                     | `string`\|`array`           | none |
+| `alignSelf`             | `align-self`                       | `string`\|`array`           | none |
+| `order`                 | `order`                            | `string`\|`array`           | none |
 
 ### Flex
 
@@ -201,14 +228,14 @@ import { Flex } from 'flokit'
 
 #### Props
 
-| Prop | CSS Property | Type |
-| :--- | :--- | :--- |
-| `alignItems` | `align-items` | `string`\|`array` |
-| `alignContent` | `align-content` | `string`\|`array` |
-| `justifyContent` | `justify-content` | `string`\|`array` |
-| `flexWrap` | `flex-wrap` | `string`\|`array` |
-| `flexBasis` | `flex-basis` | `string`\|`array` |
-| `flexDirection` | `flex-direction` | `string`\|`array` |
+| Prop | CSS Property | Theme |
+| :--- | :--- | :--- | :--- |
+| `alignItems`     | `align-items`     | `string`\|`array` | none |
+| `alignContent`   | `align-content`   | `string`\|`array` | none |
+| `justifyItems`   | `justify-items`   | `string`\|`array` | none |
+| `justifyContent` | `justify-content` | `string`\|`array` | none |
+| `flexWrap`       | `flex-wrap`       | `string`\|`array` | none |
+| `flexDirection`  | `flex-direction`  | `string`\|`array` | none |
 
 ### Text
 
@@ -224,13 +251,15 @@ import { Text } from 'flokit'
 
 #### Props
 
-| Prop | CSS Property | Type |
-| :--- | :--- | :--- |
-| `fontFamily` | `font-family` | `string`\|`array` |
-| `textAlign` | `text-align` | `string`\|`array` |
-| `lineHeight` | `line-height` | `string`\|`array` |
-| `fontWeight` | `font-weight` | `string`\|`array` |
-| `letterSpacing` | `letter-spacing` | `string`\|`array` |
+| Prop | CSS Property | Theme |
+| :--- | :--- | :--- | :--- |
+| `fontFamily`    | `font-family`    | `string`\|`number`\|`array` | `fonts` |
+| `fontSize`      | `font-size`      | `string`\|`number`\|`array` | `fontSizes` |
+| `fontWeight`    | `font-weight`    | `string`\|`number`\|`array` | `fontWeights` |
+| `lineHeight`    | `line-height`    | `string`\|`number`\|`array` | `lineHeights` |
+| `letterSpacing` | `letter-spacing` | `string`\|`number`\|`array` | `letterSpacings` |
+| `textAlign`     | `text-align`     | `string`\|`number`\|`array` | none |
+| `fontStyle`     | `font-style`     | `string`\|`number`\|`array` | none |
 
 ### Heading
 
