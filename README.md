@@ -183,8 +183,8 @@ import { Box } from 'flokit'
 | `pr`\|`paddingRight`    | `padding-right`                    | `string`\|`number`\|`array` | `space` |
 | `pb`\|`paddingBottom`   | `padding-bottom`                   | `string`\|`number`\|`array` | `space` |
 | `pl`\|`paddingLeft`     | `padding-left`                     | `string`\|`number`\|`array` | `space` |
-| `px`\|`paddingX`        | `padding-left` & `padding-right`   | `string`\|`number`\|`array` | `space` |
-| `py`\|`paddingY`        | `padding-top` & `padding-bottom`   | `string`\|`number`\|`array` | `space` |
+| `px`                    | `padding-left` & `padding-right`   | `string`\|`number`\|`array` | `space` |
+| `py`                    | `padding-top` & `padding-bottom`   | `string`\|`number`\|`array` | `space` |
 | `background`            | `background`                       | `string`\|`array`           | none |
 | `backgroundImage`       | `background-image`                 | `string`\|`array`           | none |
 | `backgroundSize`        | `background-size`                  | `string`\|`array`           | none |
@@ -199,8 +199,6 @@ import { Box } from 'flokit'
 | `borderRight`           | `border-right`                     | `string`\|`array`           | `borders` |
 | `borderBottom`          | `border-bottom`                    | `string`\|`array`           | `borders` |
 | `borderLeft`            | `border-left`                      | `string`\|`array`           | `borders` |
-| `borderX`               | `border-left` & `border-right`     | `string`\|`array`           | `borders` |
-| `borderY`               | `border-top` & `border-bottom`     | `string`\|`array`           | `borders` |
 | `textShadow`            | `text-shadow`                      | `string`\|`array`           | `shadows` |
 | `boxShadow`             | `box-shadow`                       | `string`\|`array`           | `shadows` |
 | `color`                 | `color`                            | `string`\|`array`           | `colors` |

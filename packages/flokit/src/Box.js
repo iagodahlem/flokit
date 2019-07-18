@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { compose } from 'styled-system'
 import {
   position,
   layout,
@@ -7,16 +8,8 @@ import {
   border,
   shadow,
   color,
-  flex,
-  flexGrow,
-  flexShrink,
-  flexBasis,
-  justifySelf,
-  alignSelf,
-  order,
-  compose,
-} from 'styled-system'
-import propTypes from '@styled-system/prop-types'
+  flexItem,
+} from './system'
 
 const Box = styled.div`
   box-sizing: border-box;
@@ -30,31 +23,19 @@ const Box = styled.div`
     border,
     shadow,
     color,
-    flex,
-    flexGrow,
-    flexShrink,
-    flexBasis,
-    justifySelf,
-    alignSelf,
-    order,
+    flexItem,
   )}
 `
 
 Box.propTypes = {
-  ...propTypes.position,
-  ...propTypes.layout,
-  ...propTypes.space,
-  ...propTypes.background,
-  ...propTypes.border,
-  ...propTypes.shadow,
-  ...propTypes.color,
-  flex: propTypes.flexbox.flex,
-  flexGrow: propTypes.flexbox.flexGrow,
-  flexShrink: propTypes.flexbox.flexShrink,
-  flexBasis: propTypes.flexbox.flexBasis,
-  justifySelf: propTypes.flexbox.justifySelf,
-  alignSelf: propTypes.flexbox.alignSelf,
-  order: propTypes.flexbox.order,
+  ...position.propTypes,
+  ...layout.propTypes,
+  ...space.propTypes,
+  ...background.propTypes,
+  ...border.propTypes,
+  ...shadow.propTypes,
+  ...color.propTypes,
+  ...flexItem.propTypes,
 }
 
 export default Box
