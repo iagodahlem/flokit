@@ -17,9 +17,8 @@
     "test:watch": "nwb test-react --server"
   },
   "dependencies": {
-    "@styled-system/prop-types": "^5.0.12",
     "styled-components": "^4.2.0",
-    "styled-system": "^5.0.12"
+    "styled-system": "^4.2.3"
   },
   "devDependencies": {
     "react": "^16.8.6",

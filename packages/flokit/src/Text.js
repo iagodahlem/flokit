@@ -1,6 +1,5 @@
 import styled from 'styled-components'
-import { typography } from 'styled-system'
-import propTypes from '@styled-system/prop-types'
+import { typography } from './system'
 import Box from './Box'
 
 const Text = styled(Box)`
@@ -8,7 +7,7 @@ const Text = styled(Box)`
 `
 
 Text.propTypes = {
-  ...propTypes.typography,
+  ...typography.propTypes,
 }
 
 Text.defaultProps = {

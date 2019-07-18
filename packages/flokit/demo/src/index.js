@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Box, Flex } from '../../src'
+import { Box, Flex, Text } from '../../src'
 import './index.css'
 
 const Demo = () => (
