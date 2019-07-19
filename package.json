@@ -7,7 +7,10 @@
     "start": "lerna run start --stream",
     "build": "lerna run build --stream",
     "clean": "lerna run clean --stream",
-    "test": "lerna run test --stream"
+    "test": "lerna run test --stream",
+    "website": "lerna exec --scope website -- yarn start",
+    "website:build": "lerna exec --scope website -- yarn build",
+    "website:serve": "lerna exec --scope website -- yarn serve"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
@@ -19,6 +22,7 @@
     "eslint-plugin-import": "^2.17.2",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.13.0",
+    "eslint-plugin-react-hooks": "^1.6.1",
     "lerna": "^3.13.4",
     "nwb": "^0.23.0"
   }
