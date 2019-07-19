@@ -226,7 +226,7 @@ import { Flex } from 'flokit'
 
 #### Props
 
-| Prop | CSS Property | Theme |
+| Prop | CSS Property | Type | Theme |
 | :--- | :--- | :--- | :--- |
 | `alignItems`     | `align-items`     | `string`\|`array` | none |
 | `alignContent`   | `align-content`   | `string`\|`array` | none |
@@ -249,7 +249,7 @@ import { Text } from 'flokit'
 
 #### Props
 
-| Prop | CSS Property | Theme |
+| Prop | CSS Property | Type | Theme |
 | :--- | :--- | :--- | :--- |
 | `fontFamily`    | `font-family`    | `string`\|`number`\|`array` | `fonts` |
 | `fontSize`      | `font-size`      | `string`\|`number`\|`array` | `fontSizes` |
