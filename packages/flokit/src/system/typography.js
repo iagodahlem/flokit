@@ -1,4 +1,5 @@
 import {
+  style,
   compose,
   fontFamily,
   fontSize,
@@ -9,12 +10,17 @@ import {
   fontStyle,
 } from 'styled-system'
 
+const textTransform = style({
+  prop: 'textTransform',
+})
+
 export default compose(
   fontFamily,
   fontSize,
   fontWeight,
   lineHeight,
   letterSpacing,
-  textAlign,
   fontStyle,
+  textAlign,
+  textTransform
 )

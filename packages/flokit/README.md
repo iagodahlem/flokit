@@ -256,8 +256,9 @@ import { Text } from 'flokit'
 | `fontWeight`    | `font-weight`    | `string`\|`number`\|`array` | `fontWeights` |
 | `lineHeight`    | `line-height`    | `string`\|`number`\|`array` | `lineHeights` |
 | `letterSpacing` | `letter-spacing` | `string`\|`number`\|`array` | `letterSpacings` |
-| `textAlign`     | `text-align`     | `string`\|`number`\|`array` | none |
 | `fontStyle`     | `font-style`     | `string`\|`number`\|`array` | none |
+| `textAlign`     | `text-align`     | `string`\|`number`\|`array` | none |
+| `textTransform` | `text-transform` | `string`\|`number`\|`array` | none |
 
 ### Heading
 

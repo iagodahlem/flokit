@@ -1,24 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Box, Flex, Text } from '../../src'
+import { Box, Flex } from '../../src'
 import './index.css'
 
 const Demo = () => (
   <Box width={1} height='100%'>
-    <Flex
-      height='100%'
-      justifyContent='center'
-      alignItems='center'
-      bg='#fafafa'
-    >
+    <Flex height='100%' justifyContent='center' alignItems='center' bg='#fafafa'>
       <h1>Flokit Playground</h1>
     </Flex>
 
-    <Flex
-      m='0 auto'
-      p='1.8rem'
-      maxWidth='780px'
-    >
+    <Flex m='0 auto' p='1.8rem' maxWidth='780px'>
       <Flex bg='red' alignItems='center' justifyContent='center' width={0.33}>
         1
       </Flex>
