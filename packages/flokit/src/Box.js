@@ -1,15 +1,6 @@
 import styled from 'styled-components'
 import { compose } from 'styled-system'
-import {
-  position,
-  layout,
-  space,
-  background,
-  border,
-  shadow,
-  color,
-  flexItem,
-} from './system'
+import { position, layout, space, background, border, shadow, color, flexItem } from './system'
 
 const Box = styled.div`
   box-sizing: border-box;
@@ -23,7 +14,7 @@ const Box = styled.div`
     border,
     shadow,
     color,
-    flexItem,
+    flexItem
   )}
 `
 
